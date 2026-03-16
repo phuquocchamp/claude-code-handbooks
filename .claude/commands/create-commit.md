@@ -10,6 +10,7 @@ Analyze the current git changes and generate a well-structured commit message fo
 ## Instructions
 
 You will:
+
 1. Examine the staged and unstaged changes in the repository
 2. Determine the type of change (feat, fix, refactor, docs, test, chore, perf, style)
 3. Identify the scope (affected component or module)
@@ -34,9 +35,15 @@ You will:
 - **body**: Explain what and why, not how. Wrap at 72 characters. Use bullet points for multiple changes.
 - **footer**: Reference issues (Closes #123) or breaking changes (BREAKING CHANGE: description)
 
+## Constraints
+
+- **Maximum files per commit**: 12 files. If more than 12 files are changed, split into multiple commits with focused, logical groupings.
+- **Author**: Use your git config author (user.name and user.email). Do not include Claude as co-author.
+
 ## Current Changes Analysis
 
 Review the output of:
+
 - `git status` - to see staged and unstaged files
 - `git diff --staged` - to see staged changes
 - `git diff` - to see unstaged changes
