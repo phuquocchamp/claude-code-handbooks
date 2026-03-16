@@ -37,7 +37,7 @@ You will:
 
 ## Constraints
 
-- **Maximum files per commit**: 12 files. If more than 12 files are changed, split into multiple commits with focused, logical groupings.
+- **Maximum files per commit**: 5 files. If more than 5 files are changed, split into multiple commits with focused, logical groupings.
 - **Author**: Use your git config author (user.name and user.email). Do not include Claude as co-author.
 
 ## Current Changes Analysis

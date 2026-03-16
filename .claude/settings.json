@@ -11,6 +11,17 @@
         ]
       }
     ],
+    "UserPromptSubmit": [
+      {
+        "matcher": "",
+        "hooks": [
+          {
+            "type": "prompt",
+            "prompt": "⚠️ Security Check: Does your message contain credentials (API keys, passwords, tokens, secrets)?\n\nCommon patterns to avoid:\n- API_KEY=..., SECRET=..., TOKEN=...\n- Bearer tokens or JWT tokens\n- Database passwords or connection strings\n- AWS keys, GitHub tokens, or other service credentials\n- Private keys or certificates\n\nIf your message contains credentials, DO NOT SUBMIT. Remove them and try again.\n\nProceed with submission?"
+          }
+        ]
+      }
+    ],
     "PreToolUse": [
       {
         "matcher": "Edit|Write",
